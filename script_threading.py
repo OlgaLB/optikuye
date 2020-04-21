@@ -22,5 +22,4 @@ if __name__ == "__main__":
     for thread in threads:
         thread.join()
     end_time = time.time()
-    duration = end_time - start_time
-    print(f"Downloaded {len(websites)} in {duration} seconds - with Thread")
+    print(f"Downloaded {len(websites)} in {end_time - start_time} seconds - with Thread")
