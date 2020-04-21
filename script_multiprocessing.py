@@ -31,5 +31,4 @@ if __name__ == "__main__":
     for process in processes:
         process.join()
     end_time = time.time()
-    duration = end_time - start_time
-    print(f"Downloaded {len(websites)} in {duration} seconds - with Process")
+    print(f"Downloaded {len(websites)} in {end_time - start_time} seconds - with Process")
