@@ -20,6 +20,5 @@ if __name__ == "__main__":
     start_time = time.time()
     Parallel(n_jobs=multiprocessing.cpu_count())(delayed(get_single_page)(website) for website in websites)
     end_time = time.time()
-    duration = end_time - start_time
-    print(f"Downloaded {len(websites)} in {duration} seconds - with JobLib")
+    print(f"Downloaded {len(websites)} in {end_time - start_time} seconds - with JobLib")
 
