@@ -7,12 +7,12 @@ import requests
 import multiprocessing
 from joblib import Parallel, delayed
 
+
 def get_single_page(url):
     with requests.Session().get(url) as response:
         print(f"Read {len(response.content)} from {url}")
 
 if __name__ == "__main__":
-
     websites = [ "https://www.google.de/", ] * 10
 
     # with JobLib
